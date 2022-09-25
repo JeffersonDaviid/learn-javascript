@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #234;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  border-color: #fff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  border: solid 1px #838;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-position: cover;
+  margin: 10px;
+}
+/* 
+.card1 {
+  background-image: url(hola);
+}
+.card2 {
+  background-image: url(hola);
+}
+.card3 {
+  background-image: url(hola);
+}
+.card4 {
+  background-image: url(hola);
+}
+.card5 {
+  background-image: url(hola);
+}
+.card6 {
+  background-image: url(hola);
+}
+.card7 {
+  background-image: url(hola);
+}
+.card8 {
+  background-image: url(hola);
+}
+.card9 {
+  background-image: url(hola);
+}
+.card10 {
+  background-image: url(hola);
+} */
