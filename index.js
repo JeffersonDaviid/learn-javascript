@@ -12,6 +12,22 @@ const play = (player) => {
   const pcPapel = document.getElementById("cardPc-papel");
   const pcTijera = document.getElementById("cardPc-tijera");
   const pc = opcionPc(1, 3);
+
+  if (pc == player) {
+    console.log("EMPATE ");
+    conclusion = 0;
+  } else if (
+    (player == PIEDRA && pc == TIJERA) ||
+    (player == PAPEL && pc == PIEDRA) ||
+    (player == TIJERA && pc == PAPEL)
+  ) {
+    console.log("GANASTE");
+    conclusion = 1;
+  } else {
+    console.log("PERDISTE");
+    conclusion = -1;
+  }
+
   if (pc == PIEDRA) {
     pcPiedra.classList.add("seleccionPc");
     pcPapel.classList.remove("seleccionPc");
@@ -36,21 +52,6 @@ const play = (player) => {
     setTimeout(() => {
       pcTijera.classList.remove("seleccionPc");
     }, 1000 * 3);
-  }
-
-  if (pc == player) {
-    console.log("EMPATE ");
-    conclusion = 0;
-  } else if (
-    (player == PIEDRA && pc == TIJERA) ||
-    (player == PAPEL && pc == PIEDRA) ||
-    (player == TIJERA && pc == PAPEL)
-  ) {
-    console.log("GANASTE");
-    conclusion = 1;
-  } else {
-    console.log("PERDISTE");
-    conclusion = -1;
   }
 };
 
