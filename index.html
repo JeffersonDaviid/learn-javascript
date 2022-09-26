@@ -9,55 +9,48 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="m-0 bg-light">
 
-    <!-- <main class="container d-flex align-items-center justify-content-center ">
-        <div class="row">
-            <div class="col-12 col-lg-9">
-                <div class="row">
-                    <div class="col-12 col-lg-8 bg-success">
-                        <div class="card d-flex">
-                            <div class="car-body">
-                                <h5 class="card-title">Jefferson David</h5>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur temporibus in modi quae amet quam eaque laborum, minus repellendus. Itaque
-                        distinctio consequuntur sint? In, dicta. Ullam sed eaque consequuntur mollitia!</div>
-                    <div class="col-12 col-lg-4 bg-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur temporibus in modi quae amet quam eaque laborum, minus repellendus. Itaque
-                        distinctio consequuntur sint? In, dicta. Ullam sed eaque consequuntur mollitia!</div>
-                    <div class="col-12 col-lg-8 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur temporibus in modi quae amet quam eaque laborum, minus repellendus. Itaque
-                        distinctio consequuntur sint? In, dicta. Ullam sed eaque consequuntur mollitia!</div>
-                </div>
+    <main class="container">
+        <h2 class="text-center">RICK & MORTY</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et beatae dolor temporibus
+            consequuntur eos laudantium quidem dolores facilis? Sit.
+        </p>
+        <form id="formulario" required>
+            <select type="form-select" class="form-select" aria-label="Default select example">
+                <option value="1">Personajes vivos</option>
+                <option value="2">Personajes muertos</option>
+                <option value="3">Personajes unknown</option>
+            </select>
+            <div class="d-flex justify-content-center my-3">
+                <button type="submit" class="btn btn-primary">Clasificar</button>
             </div>
-            <div class="col-12 col-lg-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat velit non
-                aperiam amet excepturi voluptates magnam? Id, vitae fugit. Quae nisi distinctio eaque maiores
-                expedita
-                molestiae accusantium repudiandae ratione voluptatum!</div>
-        </div>
-    </main> -->
+        </form>
+    </main>
 
     <div class="spinner-border d-none" role="status">
         <!-- cargando datos -->
         <span class="visually-hidden">Loading...</span>
     </div>
-    <article class="container-fluid mb-3 d-flex align-content-between flex-wrap justify-content-center"
-        id="card-dinamica">
-    </article>
+    <div class="container-fluid">
+        <h3 class="title text-center d-none">Personajes vivos</h3>
+        <article id="card-dinamica"
+            class="container-fluid mb-3 d-flex align-content-between flex-wrap justify-content-center">
+        </article>
+    </div>
+
+    <h3 class="text-center text-primary">JEFFERSON DAVID ☕</h3>
 
     <template class="card-template">
         <div class="card mx-2 my-1 ">
             <img src="https://indiehoy.com/wp-content/uploads/2022/08/rick-and-morty-1200x900.jpg" alt="rick"
                 class="center img-fluid">
             <div class="body">
-                <h5 class="text-center">Nombre</h5>
-                <p class="text-center">Humano / Alien</p>
+                <h5 class="text-center name">Nombre</h5>
+                <h6 class="text-center species">Humano / Alien</h6>
+                <p class="text-center status">Status</p>
+                <h6 class="text-center location">Location
+                </h6>
             </div>
         </div>
     </template>
