@@ -67,6 +67,7 @@ function playerWin(puntosPlayer, puntosPc) {
     setTimeout(() => {
       document.querySelector(".modalSnake").classList.add("d-none");
     }, 1000 * 5);
+    return true;
   } else if (puntosPc + 1 == 5) {
     document.querySelector(".modalSnake").classList.remove("d-none");
     document.querySelector(".modalSnake-center p").textContent = "YOU LOST";
@@ -75,17 +76,20 @@ function playerWin(puntosPlayer, puntosPc) {
     setTimeout(() => {
       document.querySelector(".modalSnake").classList.add("d-none");
     }, 1000 * 5);
+    return true;
   }
+  return false;
 }
 
 const score = (conclusion) => {
   let valorPlayer = parseInt(scorePlayer.textContent);
   let valorPc = parseInt(scorePc.textContent);
-  playerWin(valorPlayer, valorPc);
 
-  conclusion == 1
-    ? (scorePlayer.textContent = valorPlayer + conclusion)
-    : (scorePc.textContent = valorPc - conclusion);
+  if (!playerWin(valorPlayer, valorPc)) {
+    conclusion == 1
+      ? (scorePlayer.textContent = valorPlayer + conclusion)
+      : (scorePc.textContent = valorPc - conclusion);
+  }
 };
 
 document.addEventListener("click", (e) => {
