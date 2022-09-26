@@ -5,20 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn JavaScript JD</title>
+    <title>JavaScript Platzi Fronted</title>
     <link rel="icon" href="src/icono.ico">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body class="m-0 bg-light">
-    <!-- Vertically centered modal -->
-    <!-- <div class="modal-dialog modal-dialog-centered">
-        hola
-    </div> -->
+    <!-- Modal -->
+    <div class="modalSnake d-none d-flex justify-content-center align-content-center flex-wrap" id="exampleModalCenter">
+        <div class="modalSnake-center container container-sm container-md  align-self-center">
+            <!-- <div class="content"> -->
+            <!-- <div class="modal-body "> -->
+            <p class="text-center">YOU WIN</p>
+            <!-- </div> -->
+            <!-- <div class="modal-footer"> -->
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
 
-
-    <h1 class="text-center text-warning">Piedra, Papel o tijera 😎</h1>
+    <h1 class="text-center text-warning">REAL SNAKE 🐍</h1>
 
     <main class="container border ">
         <article class="container border-danger ">
@@ -26,47 +35,32 @@
             <h3 class="text-center text-primary">PC 💻</h3>
             <span>Score: </span><span class="score-pc">0</span>
             <div class="d-flex flex-wrap justify-content-evenly">
-                <div id="cardPc-tijera" class="card col-5 col-lg-3 col-md-2 col-sm-3 mx-md-3 mx-2 my-2">
-                    <div class="card-body">
-                        <p class="text-center ">TIJERA</p>
-                    </div>
-                    <img class="img-thumbnail img-fluid " src="src/piedrapapeltijera/tijera.png" alt="papel">
+                <div id="cardPc-water" class="card col-5 col-lg-3 col-md-2 col-sm-3 mx-md-3 mx-2 my-2">
+                    <p class="text-center ">KRAIT 💧</p>
+                    <img class="img-thumbnail img-fluid " src="src/snake/snake1.png" alt="papel">
                 </div>
-                <div id="cardPc-piedra" class="card col-5 col-lg-3 col-md-2 col-sm-3 mx-md-3 mx-2 my-2">
-                    <div class="card-body">
-                        <p class="text-center ">PIEDRA</p>
-                    </div>
-                    <img class="img-thumbnail img-fluid " src="src/piedrapapeltijera/piedra.png" alt="papel">
+                <div id="cardPc-earth" class="card col-5 col-lg-3 col-md-2 col-sm-3 mx-md-3 mx-2 my-2">
+                    <p class="text-center ">PHYTON 🌱</p>
+                    <img class="img-thumbnail img-fluid " src="src/snake/snake2.png" alt="papel">
                 </div>
-                <div id="cardPc-papel" class="card  col-5 col-lg-3 col-md-2 col-sm-3 mx-md-3 mx-2 my-2">
-                    <div class="card-body">
-                        <p class="text-center ">PAPEL</p>
-                    </div>
-                    <img class="img-thumbnail img-fluid " src="src/piedrapapeltijera/papel.png" alt="papel">
+                <div id="cardPc-fire" class="card  col-5 col-lg-3 col-md-2 col-sm-3 mx-md-3 mx-2 my-2">
+                    <p class="text-center ">COBRA 🔥</p>
+                    <img class="img-thumbnail img-fluid " src="src/snake/snake3.png" alt="papel">
                 </div>
             </div>
             <br><br>
             <div class="d-flex flex-wrap justify-content-evenly">
                 <div class="cardPlayer-piedra cardPlayer card  col-5 col-lg-3 col-md-2 col-sm-3 mx-md-3 mx-2 my-2">
-                    <img id="cardPlayer-piedra" class="img-thumbnail img-fluid " src="src/piedrapapeltijera/piedra.png"
-                        alt="papel">
-                    <div class="card-body">
-                        <p class="text-center ">PIEDRA</p>
-                    </div>
+                    <img id="cardPlayer-piedra" class="img-thumbnail img-fluid " src="src/snake/snake2.png" alt="papel">
+                    <p class="text-center ">PHYTON 🌱</p>
                 </div>
                 <div class="cardPlayer-papel cardPlayer card  col-5 col-lg-3 col-md-2 col-sm-3 mx-md-3 mx-2 my-2">
-                    <img id="cardPlayer-papel" class="img-thumbnail img-fluid " src="src/piedrapapeltijera/papel.png"
-                        alt="papel">
-                    <div class="card-body">
-                        <p class="text-center ">PAPEL</p>
-                    </div>
+                    <img id="cardPlayer-papel" class="img-thumbnail img-fluid " src="src/snake/snake3.png" alt="papel">
+                    <p class="text-center ">COBRA 🔥</p>
                 </div>
                 <div class="cardPlayer-tijera cardPlayer card col-5 col-lg-3 col-md-2 col-sm-3 mx-md-3 mx-2 my-2">
-                    <img id="cardPlayer-tijera" class="img-thumbnail img-fluid " src="src/piedrapapeltijera/tijera.png"
-                        alt="papel">
-                    <div class="card-body">
-                        <p class="text-center ">TIJERA</p>
-                    </div>
+                    <img id="cardPlayer-tijera" class="img-thumbnail img-fluid " src="src/snake/snake1.png" alt="papel">
+                    <p class="text-center ">KRAIT 💧</p>
                 </div>
             </div>
             <span>Score: </span><span class="score-player">0</span>
@@ -74,9 +68,8 @@
         </article>
     </main>
 
-
     <script src="index.js"></script>
-    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
     </script>
 </body>
 
