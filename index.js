@@ -1,89 +1,98 @@
-let dataFetch;
+const PIEDRA = 1;
+const PAPEL = 2;
+const TIJERA = 3;
+let conclusion = 0;
 
-const cards = document.querySelector("#card-dinamica");
-const templateCard = document.querySelector(".card-template").content;
-const formulario = document.getElementById("formulario");
-const btnClasificar = document.querySelector("main .btn");
+const opcionPc = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
 
-const url = "https://rickandmortyapi.com/api/character";
-//Segundo metodo de seguridad para cargar js despues del dom
-document.addEventListener("DOMContentLoaded", () => {
-  loadDataFetch(true);
-});
+const play = (player) => {
+  const pcPiedra = document.getElementById("cardPc-piedra");
+  const pcPapel = document.getElementById("cardPc-papel");
+  const pcTijera = document.getElementById("cardPc-tijera");
+  const pc = opcionPc(1, 3);
+  if (pc == PIEDRA) {
+    pcPiedra.classList.add("seleccionPc");
+    pcPapel.classList.remove("seleccionPc");
+    pcTijera.classList.remove("seleccionPc");
+    console.log("PC eligio Piedra ", PIEDRA);
+    setTimeout(() => {
+      pcPiedra.classList.remove("seleccionPc");
+    }, 1000 * 3);
+  } else if (pc == PAPEL) {
+    pcPiedra.classList.remove("seleccionPc");
+    pcPapel.classList.add("seleccionPc");
+    pcTijera.classList.remove("seleccionPc");
+    console.log("PC eligio Papel ", PAPEL);
+    setTimeout(() => {
+      pcPapel.classList.remove("seleccionPc");
+    }, 1000 * 3);
+  } else {
+    pcPiedra.classList.remove("seleccionPc");
+    pcPapel.classList.remove("seleccionPc");
+    pcTijera.classList.add("seleccionPc");
+    console.log("PC eligio Tijera ", TIJERA);
+    setTimeout(() => {
+      pcTijera.classList.remove("seleccionPc");
+    }, 1000 * 3);
+  }
 
-const loadDataFetch = async () => {
-  try {
-    loadingData(true);
-    const respuestaAPI = await fetch(url);
-    dataFetch = (await respuestaAPI.json()).results;
-  } catch (error) {
-    console.log(error);
-  } finally {
-    loadingData(false);
+  if (pc == player) {
+    console.log("EMPATE ");
+    conclusion = 0;
+  } else if (
+    (player == PIEDRA && pc == TIJERA) ||
+    (player == PAPEL && pc == PIEDRA) ||
+    (player == TIJERA && pc == PAPEL)
+  ) {
+    console.log("GANASTE");
+    conclusion = 1;
+  } else {
+    console.log("PERDISTE");
+    conclusion = -1;
   }
 };
 
-formulario.addEventListener("submit", (e) => {
-  e.preventDefault();
-});
+const score = (conclusion) => {
+  const scorePc = document.querySelector(".score-pc");
+  const scorePlayer = document.querySelector(".score-player");
+  let valorPlayer = parseInt(scorePlayer.textContent);
+  let valorPc = parseInt(scorePc.textContent);
 
-const filtrar = (data) => {
-  const ALIVE = 1;
-  const DEAD = 2;
-  const UNKNOWN = 3;
-  const filtroType = parseInt(
-    document.querySelector("form .form-select").value
-  );
-  if (!Number.isInteger(filtroType)) console.log("El filtro no es válido");
-  try {
-    switch (filtroType) {
-      case ALIVE:
-        document.querySelector(".title").classList.remove("d-none");
-        document.querySelector(".title").textContent = "Personajes vivos";
-        return data.filter((item) => item.status === "Alive");
-      case DEAD:
-        document.querySelector(".title").classList.remove("d-none");
-        document.querySelector(".title").textContent = "Personajes Muertos";
-        return data.filter((item) => item.status === "Dead");
-      case UNKNOWN:
-        document.querySelector(".title").classList.remove("d-none");
-        document.querySelector(".title").textContent = "Personajes Unknown";
-        return data.filter((item) => item.status === "unknown");
-    }
-  } catch (error) {
-    console.log(error);
+  conclusion == 1
+    ? (scorePlayer.textContent = valorPlayer + conclusion)
+    : (scorePc.textContent = valorPc - conclusion);
+};
+
+document.addEventListener("click", (e) => {
+  if (e.target.matches("#cardPlayer-piedra")) {
+    const piedra = document.querySelector(".cardPlayer-piedra");
+    piedra.classList.toggle("seleccionPlayer");
+    play(PIEDRA);
+    score(conclusion);
+    setTimeout(() => {
+      piedra.classList.toggle("seleccionPlayer");
+    }, 1000 * 3);
   }
-};
 
-const eliminarCard = () => {
-  while (document.querySelector("#card-dinamica .card")) {
-    cards.removeChild(document.querySelector("#card-dinamica .card"));
+  if (e.target.matches("#cardPlayer-papel")) {
+    const papel = document.querySelector(".cardPlayer-papel");
+    papel.classList.toggle("seleccionPlayer");
+    play(PAPEL);
+    score(conclusion);
+    setTimeout(() => {
+      papel.classList.toggle("seleccionPlayer");
+    }, 1000 * 3);
   }
-};
 
-const pintarCard = (data) => {
-  eliminarCard();
-  const fragment = document.createDocumentFragment();
-  const filtrado = filtrar(data);
-  filtrado.forEach((item) => {
-    const clone = templateCard.cloneNode(true);
-    clone.querySelector(".name").textContent = item.name;
-    clone.querySelector(".species").textContent = item.species;
-    clone.querySelector(".status").textContent = item.status;
-    clone.querySelector(".location").textContent = item.location.name;
-    clone.querySelector("img").src = item.image;
-
-    fragment.appendChild(clone);
-  });
-  cards.appendChild(fragment);
-};
-
-const loadingData = (estado) => {
-  const loading = document.querySelector(".spinner-border");
-  if (estado) loading.classList.remove("d-none");
-  else loading.classList.add("d-none");
-};
-
-btnClasificar.addEventListener("click", () => {
-  pintarCard(dataFetch);
+  if (e.target.matches("#cardPlayer-tijera")) {
+    const tijera = document.querySelector(".cardPlayer-tijera");
+    tijera.classList.toggle("seleccionPlayer");
+    play(TIJERA);
+    score(conclusion);
+    setTimeout(() => {
+      tijera.classList.toggle("seleccionPlayer");
+    }, 1000 * 3);
+  }
 });

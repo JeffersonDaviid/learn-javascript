@@ -1,60 +1,28 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
+.cardPlayer {
+  transition: all 0.4s;
+}
+.cardPlayer:hover {
+  background-color: #0baa2ec2;
+  translate: 0 -25px;
+  transition: all 0.4s;
 }
 
-body {
-  background-color: #234;
-  color: #fff;
+.seleccionPlayer {
+  position: relative;
+  background-color: #0baa2ec2;
+  translate: 0 -25px;
+  transition: all 0.4s;
 }
 
-.container {
-  display: flex;
-  border-color: #fff;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 10px;
+.seleccionPc {
+  position: relative;
+  background-color: #0baa2ec2;
+  translate: 0 25px;
+  transition: all 0.4s;
 }
 
-.card {
-  width: 100px;
-  height: 100px;
-  border: solid 1px #838;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  background-repeat: no-repeat;
-  background-position: cover;
-  margin: 10px;
+#cardPc-tijera,
+#cardPc-papel,
+#cardPc-piedra {
+  transition: all 0.4s;
 }
-/* 
-.card1 {
-  background-image: url(hola);
-}
-.card2 {
-  background-image: url(hola);
-}
-.card3 {
-  background-image: url(hola);
-}
-.card4 {
-  background-image: url(hola);
-}
-.card5 {
-  background-image: url(hola);
-}
-.card6 {
-  background-image: url(hola);
-}
-.card7 {
-  background-image: url(hola);
-}
-.card8 {
-  background-image: url(hola);
-}
-.card9 {
-  background-image: url(hola);
-}
-.card10 {
-  background-image: url(hola);
-} */
