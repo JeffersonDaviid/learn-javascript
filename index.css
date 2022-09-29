@@ -1,5 +1,27 @@
+body {
+  background-image: url("https://images3.alphacoders.com/581/thumb-1920-581580.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  /* filter: blur(4px); */
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: -1; */
+}
+
+/* main {
+} */
+
+article span {
+  background-color: #00ffff;
+  padding: 6px 9px;
+  border-radius: 20px;
+}
+
 .cardPlayer {
   transition: all 0.4s;
+  /* background-color: #c60a52e2;
+  color: #fff; */
 }
 .cardPlayer:hover {
   background-color: #0baa2ec2;
@@ -25,6 +47,8 @@
 #cardPc-fire,
 #cardPc-water {
   transition: all 0.4s;
+  /* background-color: #c60a52e2;
+  color: #fff; */
 }
 
 .card {

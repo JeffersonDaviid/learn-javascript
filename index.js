@@ -59,7 +59,7 @@ const play = (player) => {
 };
 
 function playerWin(puntosPlayer, puntosPc) {
-  if (puntosPlayer + 1 == 5) {
+  if (puntosPlayer == 5) {
     document.querySelector(".modalSnake").classList.remove("d-none");
     document.querySelector(".modalSnake-center p").textContent = "YOU WIN";
     scorePc.textContent = "0";
@@ -67,8 +67,7 @@ function playerWin(puntosPlayer, puntosPc) {
     setTimeout(() => {
       document.querySelector(".modalSnake").classList.add("d-none");
     }, 1000 * 5);
-    return true;
-  } else if (puntosPc + 1 == 5) {
+  } else if (puntosPc == 5) {
     document.querySelector(".modalSnake").classList.remove("d-none");
     document.querySelector(".modalSnake-center p").textContent = "YOU LOST";
     scorePc.textContent = "0";
@@ -76,54 +75,66 @@ function playerWin(puntosPlayer, puntosPc) {
     setTimeout(() => {
       document.querySelector(".modalSnake").classList.add("d-none");
     }, 1000 * 5);
-    return true;
   }
-  return false;
 }
 
 const score = (conclusion) => {
   let valorPlayer = parseInt(scorePlayer.textContent);
   let valorPc = parseInt(scorePc.textContent);
 
-  if (!playerWin(valorPlayer, valorPc)) {
-    conclusion == 1
-      ? (scorePlayer.textContent = valorPlayer + conclusion)
-      : (scorePc.textContent = valorPc - conclusion);
-  }
+  conclusion == 1 || conclusion == 0
+    ? (scorePlayer.textContent = valorPlayer + conclusion)
+    : (scorePc.textContent = valorPc - conclusion);
+
+  playerWin(parseInt(scorePlayer.textContent), parseInt(scorePc.textContent));
 };
 
 document.addEventListener("click", (e) => {
-  if (e.target.matches("#cardPlayer-piedra")) {
-    const piedra = document.querySelector(".cardPlayer-piedra");
-    piedra.classList.toggle("seleccionPlayer");
+  if (e.target.matches("#cardPlayer-fire")) {
+    const fire = document.querySelector(".cardPlayer-fire");
+    fire.classList.toggle("seleccionPlayer");
     play(FIRE);
     score(conclusion);
     setTimeout(() => {
-      piedra.classList.toggle("seleccionPlayer");
+      fire.classList.toggle("seleccionPlayer");
     }, 1000 * 1);
   }
 
-  if (e.target.matches("#cardPlayer-papel")) {
-    const papel = document.querySelector(".cardPlayer-papel");
-    papel.classList.toggle("seleccionPlayer");
+  if (e.target.matches("#cardPlayer-water")) {
+    const water = document.querySelector(".cardPlayer-water");
+    water.classList.toggle("seleccionPlayer");
     play(WATER);
     score(conclusion);
     setTimeout(() => {
-      papel.classList.toggle("seleccionPlayer");
+      water.classList.toggle("seleccionPlayer");
     }, 1000 * 1);
   }
 
-  if (e.target.matches("#cardPlayer-tijera")) {
-    const tijera = document.querySelector(".cardPlayer-tijera");
-    tijera.classList.toggle("seleccionPlayer");
+  if (e.target.matches("#cardPlayer-earth")) {
+    const earth = document.querySelector(".cardPlayer-earth");
+    earth.classList.toggle("seleccionPlayer");
     play(EARTH);
     score(conclusion);
     setTimeout(() => {
-      tijera.classList.toggle("seleccionPlayer");
+      earth.classList.toggle("seleccionPlayer");
     }, 1000 * 1);
   }
 
   if (e.target.matches(".modalSnake")) {
     console.log("diste click es modal");
   }
+});
+
+// document.addEventListener("keypress", (e) => {
+//   console.log("el boton se presiono ", e.key);
+// });
+document.addEventListener("keyup", (e) => {
+  console.log("el boton dejo de presionar ", e.key);
+});
+document.addEventListener("keydown", (e) => {
+  console.log("el boton mantiene presionado " + e.key);
+});
+
+document.addEventListener("scroll", (e) => {
+  console.log(e);
 });
