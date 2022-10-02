@@ -28,3 +28,12 @@ document.addEventListener("click", (e) => {
     reinciarContador();
   }
 });
+
+document.addEventListener("keydown", (e) => {
+  if (e.key == "ArrowUp") {
+    aumentarContador();
+  }
+  if (e.key == "ArrowDown") {
+    disminuirContador();
+  }
+});
