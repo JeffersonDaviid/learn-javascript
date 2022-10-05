@@ -39,7 +39,7 @@ body {
 }
 
 #input-user {
-  /* width: 75%; */
+  width: 80%;
   font-size: 15px;
   height: 40px;
   overflow-y: hidden;
@@ -126,5 +126,10 @@ body {
   }
   #formulario {
     width: 95%;
+    margin: 15px 0;
+  }
+
+  #input-user {
+    width: 90%;
   }
 }
