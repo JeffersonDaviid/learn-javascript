@@ -3,56 +3,33 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>CURSO JAVASCRIPT</title>
+    <title>ToDo X Jefferson</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="./src/icono.ico">
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1066/PNG/128/Books_icon-icons.com_76879.png">
 </head>
 
 <body>
-    <section id="seleccionar-mascota">
-        <h1 class="titulo">Mokepono</h1>
-
-        <h2 class="subtitulo">Elige tu mascota:</h2>
-
-        <div id='contenedorTarjetas' class="tarjetas">
-
+    <main class="container">
+        <h1 class="titulo">ToDo App X Jefferson</h1>
+        <form id="formulario">
+            <input type="text" name="input-todo" id="input-user" autocomplete="off" placeholder="Write your ideas :)">
+            <button class="btn btn-agregar" type="submit">Agregar</button>
+        </form>
+        <span class="leyenda">TODAY AND TASK</span>
+        <div class="todo-list-container">
+            <label class="todo-content">
+                <span class="todo">Tell your ideas... :)</span>
+                <button class="btn btn-eliminar">Eliminar</button>
+            </label>
         </div>
+    </main>
+    <template class="todo-template">
+        <label class="todo-content">
+            <span class="todo">tarea 1</span>
+            <button class="btn btn-eliminar" data-id="" value="Eliminar">Eliminar</button>
+        </label>
+    </template>
 
-        <button id="boton-mascota">Seleccionar</button>
-    </section>
-
-    <section id="seleccionar-ataque">
-        <h1 class="titulo">Mokepon</h1>
-
-        <h2 class="subtitulo">Elige tu ataque:</h2>
-
-        <div class="tarjetas-ataques">
-            <!-- <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
-            <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
-            <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button> -->
-        </div>
-
-        <div id="mensajes">
-            <p id="resultado">Mucha suerte</p>
-
-            <section id="reiniciar">
-                <button id="boton-reiniciar">Reiniciar</button>
-            </section>
-        </div>
-
-        <div class="ataques">
-            <div class="ataques-jugador">
-                <p id="vidas-jugador">3</p>
-                <p id="mascota-jugador"></p>
-                <div id="ataques-del-jugador"></div>
-            </div>
-            <div class="ataques-enemigo">
-                <p id="vidas-enemigo">3</p>
-                <p id="mascota-enemigo"></p>
-                <div id="ataques-del-enemigo"></div>
-            </div>
-        </div>
-    </section>
     <script src="index.js"></script>
 </body>
 
