@@ -243,3 +243,11 @@ RECURSOS
 
 </div>   
 </div>
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>CURSO JAVASCRIPT</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./src/icono.ico">
+</head>
