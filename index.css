@@ -132,4 +132,25 @@ body {
   #input-user {
     width: 90%;
   }
+  .todo-content:hover {
+    box-shadow: 0 0 20px #3388ff98;
+  }
+
+  .btn {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0.25rem;
+  }
+
+  .btn:hover {
+    box-shadow: #ffffff4d 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+
+  .todo-content {
+    padding: 3px 5px;
+  }
+  .todo {
+    font-size: 16px;
+  }
 }
