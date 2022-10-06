@@ -24,7 +24,7 @@ const numeroAleatorio = (min, max) => {
 const cambiarFondo = () => {
   const $body = document.querySelector("body");
   $body.style.backgroundImage = `url('${
-    fondos[numeroAleatorio(0, fondos.length)]
+    fondos[numeroAleatorio(0, fondos.length - 1)]
   }')`;
 };
 
@@ -87,4 +87,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
     listaTodo = JSON.parse(localStorage.getItem("tasks"));
     mostrarTask();
   }
+});
+
+const sonido = document.getElementById("sonidos");
+document.addEventListener("keypress", (e) => {
+  let sonidoTecla = '<audio src="./src/tecla.ogg" autoplay></audio>';
+  let sonidoEspacio = '<audio src="./src/espacio.ogg" autoplay></audio>';
+  let sonidoEnter = '<audio src="./src/enter.mp3" autoplay></audio>';
+  if (e.key === " ") sonido.innerHTML = sonidoEspacio;
+  else if (e.key === "Enter") sonido.innerHTML = sonidoEnter;
+  else sonido.innerHTML = sonidoTecla;
+  // console.log(e.key);
 });
