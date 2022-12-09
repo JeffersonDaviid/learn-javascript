@@ -28,6 +28,17 @@ Aprox. 1451 A.C - 1427 A.C
 
 <blockquote class="sky">EJEMPLO FOTO-MULTAH</blockquote>
 
+> Genesis 17 - "heredad perpetua"   
+> dar - para siempre    
+> posesion - condicional         
+
+> APLICACION  
+
+> CANAAN NO DEBE SER COMPARADA CON EL CIELO
+> - No hay que pelear para llegar al cielo, es un regalo de Dios.
+> - No hay pecado en el cielo.
+
+
 ### Josue
 Sucesor de Moises Dt. 31:7-8 - aprox. 80 y 90 años
 
@@ -35,7 +46,7 @@ Como sabemos a causa de la desobediencia de Moises, Dios le impidio que el habit
 
 Moises murio sin haber entrado en la tierra prometida pero antes de morir
 
-Moises dejo preparado a una persona, y esa persona es Josue, Hijo de Nun
+Moises dejo preparado a una persona, y esa persona es Josue, Hijo de Nun, de la tribu de Efraín
 
 >> LEER 1:1-2
 
@@ -242,7 +253,7 @@ porque sucedio esto, asi como Moises en la guerra con Amalec Ex. 17:11, Josue hi
 
 Luego Josue edifico un altar para Dios en el monte Ebal, y delante de todo el pueblo Josué escribio la Ley en la piedras del altar. delante de todo israel (pueblo, oficiales, jueces, sacerdotes levitas que llevaban el arca) 
 
-Se leyó todas las palabras de la le, tanto la bendiciones como las maldiciones.
+Se leyó todas las palabras de la ley, tanto la bendiciones como las maldiciones. Dt. 28, 1 bendición = 3 maldiciones aprox.
 
 >>De nuevo, las instrucciones a los hijos. Josue hizo leer toda, absolutamente toda la ley. >Dt. 6:1-9 
 
@@ -312,18 +323,115 @@ Josue derrotó a los reyes de:
 
 Ciertamente aun faltaba territorio por poseer, pero Josue debido a su edad ya no podría hacerlo, y Dios le dice que tiene que repartir la tierra entre las nueva tribus y media tribu de Manasés.
 
+Todas las tierras de los `FILISTEOS` y toda la tierra de los `GESUREOS`
+
+
 #### CAPITULO 14 - REPARTICION DE CANAAN
 
-Josue, Eleazar y los cavezas de los padres de las tribus.
+Han pasado 7 años desde la entrada a Canaán, es decir han pasado 6 años de continua guerra y en este septimo año es cuando los pueblos descanzan de la guerra.
+
+Josue, Eleazar y los cabezas de los padres de las tribus. son los que iban a repartir la tierra de canaán.
+
+#### CAPITULO 21 - HERENCIA DE LOS LEVITAS
+
+48 ciudades para los levitas `Num 35:1-8` 
+
+<blockquote class="warning">Ellos NO tivieron HERENCIA, SIN EMBARGO Dios había dicho que las demás tribus debían dar ciudades con sus ejidos para que ellos vivan y tengan a sus ganados.</blockquote>
 
 
-48 ciudades para los levitas `Num 35:1-8`
+Caracteristicas de las ciudades
+
+1. Todas debian ser cuadradas 
+2. Todas debian tener ejidos 
+
+
+
 #### CAPITULO 20 - CIUDADES REFUGIO
 
+La función de la ciudades refugio erán para salvar la vida de una persona por si alguien mataba a alguien por `ACCIDENTE`, entonces esa personas podía ir a esta ciudad para refugiarse del vengador de la sangre.
+
+ejemplo:
+
+Alguien mata a un amigo suyo por accidente, y el padre del amigo viene tras él para matarlo, para vengarse. entonces el podía ir a la ciudad para refugiarse. porque los ancianos no lo iban a entregar en manos del padre.
+
+> ¿Qué debían hacer las personas que llegaban? <br>
+> 1. contar los hechos tal como sucedieron a los ancianos de esa ciudad<br>
+> <br> El homicida se debía quedar hasta que:
+> 1. comparezca en juicio delante de la congregación
+> 2. Hasta que el sumosacerdote de ese tiempo muera.
+
+> Luego podría marcharse a su casa.
+
+#### CAPITULO 22 - 
+
+Por fin la guerra había 'terminado', entonces Josue envia a los hombres valientes que habían acompañado a las nueve tribus y media, con el botin que habían recogido de la ciudades con las que habían luchado. con ganado, oro, plata, bronce, vestidos para compartir con los hermanos que habían quedado del otro lado del rio.
+
+Josue además que enviarles el botin, les dice o hace recordar que no se deben olvidar de Dios...
+
+> Josue 22:5-6
+
+Antes de que las dos tribus y media cruzaran el rio Jordán, es decir, aún en Canaán, contruyen un altar de gran apariencia.
+
+Oyendo el pueblo lo que habían hecho las dos tribus y media. vinieron con ellos enseguida. 
+- Finees, Hijo de Sacerdote Eleazar
+- 10 principes, jefes de tribu de Canaán, uno de cada tribu
+- toda la congregación
+
+> Vinieron para luchar contra ellos.
+
+_Pregunta_     
+¿Qué están haciendo?, se están revelando contra Jehova, haciendo otro altar para adorarle, acaso no les gusta la tierra que poseen si quieren pueden venir a morar a este lado del rio, pero no se vengan en contra de Jehová.
+
+_Respuesta_    
+No hemos hecho un altar para sacrificios u ofredas de paz... Sino que nosotro hemos dicho que este altar sea de testimonio entre ustedes y nosotros que somos un solo pueblo. y que sus hijos no digan a nuestros hijos _'ustedes no son parte del pueblo de Dios y asi nuestros hijos dejen de temer a Dios'_
+
+Lo primero que podemos aprender es que debemos hacer disernimiento de la palabra de Dios, primero escuchando lo que el otro quiere decir, no hablando todos al mismo tiempo, ser ordenados. No precipitados.
+
+Los padres se estaban preocupandos
+1. por la proxima generación
+2. que sus hijos __teman a Dios__
+3. que sus hijos sigan sirviendo a Dios
+4. que sus hijos no se aparten de Dios.
+
+
+Lo segundo es queridos padres es: ¿Que hicieron para que sus hijos no se aparten de Dios? ¿Qué están haciendo para que sus hijos no se aparten de Dios? 
+
+_responsabilidad de padres:_ Herencia de Jehová son los hijos Sal. 127:3
+
+¿Estoy instruyendo a mis hijos o el mundo lo hace por mí?
 
 ---
 ## IV PARTE 
+#### CAPITULO 23 - LLAMADO A LA OBEDIENCIA
 
+Han pasado aproximádamente 17 años desde que Josué repartió la tierra de Canaán a las nueve tribus y media por suertes y dependiendo si la tribu era grande o pequeña.
+
+> Relaciones sociales
+
+Esforzaos, pues, mucho en guardar y hacer todo lo que está escrito en el libro de la ley de Moisés, sin apartaros de ello ni a diestra ni a siniestra; para que no os mezcléis con estas naciones que han quedado con vosotros...Guardad, pues, con diligencia vuestras almas, para que améis a Jehová vuestro Dios. Josué 23:6-7,11
+
+- No tener malas asociaciones
+- Ser sabio en mis relaciones
+
+'Debemos ser cuidadosos de nuestras relaciones con "los de afuera". Se necesita gracia y sabiduría espirituales para tener contacto sin contaminarnos y para ser diferenctes sin ser críticos y orgullosos'
+
+Andad sabiamente con los de afuera, redimiendo el tiempo Colosenses 4:5
+
+> ADVERTENCIAS FUERTES
+
+Si no se mantienen fieles a Dios y se mezclan con la gente que todavia hay entre ustedes. Dios 
+
+12 Manténganse fieles a él. No se mezclen con las naciones que todavía viven allí, ni se casen con su gente. 13 De lo contrario, Dios no expulsará a estas naciones de delante de ustedes, sino que serán como una red o una trampa que los hará caer. Dios los usará como un látigo sobre las espaldas de ustedes, y como espinas en sus ojos. Y esto seguirá así, hasta que no quede ninguno de ustedes en esta tierra buena que nuestro Dios nos ha dado.
+
+> Versiculos 
+
+Sin embargo en tiempo de hoy, Dios no puede airarse contra nosotros, esto debido a la doctrina de justificación que nos dice que si creemos en el Señor Jesús, Dios nos ve justos delante de Él.
+
+Pero son justificados gratuitamente por su gracia, mediante la redención que proveyó Cristo Jesús, a quien Dios puso como sacrificio de expiación por medio de la fe en su sangre. Esto lo hizo Dios para manifestar su justicia, pues en su paciencia ha pasado por alto los pecados pasados, para manifestar su justicia en este tiempo, a fin de que él sea el justo y, al mismo tiempo, el que justifica al que tiene fe en Jesús (Ro 3:24-26).
+
+- Hebreos 12:7-11
+- Proverbios 29:15
 
 <blockquote class="sky">NotasImportantes</blockquote>
 <blockquote class="warning">NotasImportantes</blockquote>
+
