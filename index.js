@@ -1,5 +1,5 @@
 let $formulario = document.getElementById('formulario');
-const templateTodo = document.querySelector('.todo-template').content;
+const templateTodo = document.querySelector('.todo-template').Content;
 
 let listaTodo = [];
 
